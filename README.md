@@ -1,4 +1,7 @@
 # ui5-fontawesome
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/zypA13510/ui5-fontawesome.svg)](https://greenkeeper.io/)
+
 A [Font Awesome](https://fontawesome.com/) plugin for [OpenUI5](https://openui5.org/)/SAPUI5
 
 ## Usage
