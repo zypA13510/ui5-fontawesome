@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "lint": "eslint --quiet . && semantic-commitlint",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm shrinkwrap && gulp rebuild"
+    "prepare": "gulp rebuild"
   },
   "repository": "github:zypA13510/ui5-fontawesome",
   "keywords": [
@@ -69,7 +69,6 @@
     "js/**/*.js",
     "js/**/*.min.js.map",
     "metadata/*.json",
-    "npm-shrinkwrap.json",
     "package.json",
     "CHANGELOG.md",
     "LICENSE.txt",
