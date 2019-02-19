@@ -25,7 +25,7 @@
 			{
 				"verifyConditionsCmd": "npx semantic-commitlint",
 				"generateNotesCmd": "npx gulp --silent printversion",
-				"prepareCmd": "npx gulp pack --version ${nextRelease.version}",
+				"prepareCmd": "npx gulp pack --packageversion ${nextRelease.version}",
 				"successCmd": "npx gulp clean",
 				"failCmd": "npx gulp clean"
 			}

@@ -91,7 +91,7 @@ function clean() {
 
 function convertTarballToZip () {
 	let {name, version} = require('./package.json')
-	version = argv.version || version
+	version = argv['package-version'] || version
 	return src('dist/*.tgz')
 		.pipe(decompress())
 		.pipe(rename(file => {
