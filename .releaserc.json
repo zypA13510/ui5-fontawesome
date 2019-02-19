@@ -1,0 +1,40 @@
+{
+	"plugins": [
+		"@semantic-release/commit-analyzer",
+		"@semantic-release/release-notes-generator",
+		"@semantic-release/changelog",
+		[
+			"@semantic-release/npm",
+			{
+				"tarballDir": "dist"
+			}
+		],
+		[
+			"@semantic-release/git",
+			{
+				"assets": [
+					"CHANGELOG.md",
+					"package.json",
+					"package-lock.json"
+				],
+				"message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}\n\n[skip ci]"
+			}
+		],
+		[
+			"@semantic-release/exec",
+			{
+				"verifyConditionsCmd": "npx semantic-commitlint",
+				"generateNotesCmd": "npx gulp --silent printversion",
+				"prepareCmd": "npx gulp pack --version ${nextRelease.version}",
+				"successCmd": "npx gulp clean",
+				"failCmd": "npx gulp clean"
+			}
+		],
+		[
+			"@semantic-release/github",
+			{
+				"assets": "dist/*.zip"
+			}
+		]
+	]
+}

@@ -5,8 +5,9 @@
 *.min.js
 *.map
 
-# Prefer NPM over yarn
+# Prefer NPM over yarn, and prefer lock over shrinkwrap
 yarn.lock
+npm-shrinkwrap.json
 
 # Logs
 logs

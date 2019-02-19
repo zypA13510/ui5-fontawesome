@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "lint": "eslint --quiet . && semantic-commitlint",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "gulp rebuild"
+    "prepare": "npm shrinkwrap && gulp rebuild"
   },
   "repository": "github:zypA13510/ui5-fontawesome",
   "keywords": [
