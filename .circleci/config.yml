@@ -57,7 +57,7 @@ jobs:
       - run: npx semantic-release
 workflows:
   version: 2
-  test-and-release:
+  build:
     jobs:
       - prebuild
       - build:
