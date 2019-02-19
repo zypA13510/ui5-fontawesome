@@ -8,7 +8,6 @@ const uglify = require('gulp-uglify')
 const rename = require('gulp-rename')
 const sourcemaps = require('gulp-sourcemaps')
 const del = require('del')
-const {argv} = require('yargs')
 const decompress = require('gulp-decompress')
 const zip = require('gulp-zip')
 
@@ -81,7 +80,6 @@ function minify() {
 
 function clean() {
 	return del([
-		'dist/**',
 		'metadata/**',
 		'fontawesome-free/**',
 		'js/**/*.min.js',
@@ -91,8 +89,7 @@ function clean() {
 
 function convertTarballToZip () {
 	let {name, version} = require('./package.json')
-	version = argv['package-version'] || version
-	return src('dist/*.tgz')
+	return src(`dist/${name}-${version}.tgz`)
 		.pipe(decompress())
 		.pipe(rename(file => {
 			file.dirname = file.dirname.replace(/^package/, name)
