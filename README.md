@@ -1,6 +1,9 @@
 # ui5-fontawesome
 
+[![CircleCI](https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome.svg?style=flat)](https://circleci.com/gh/zypA13510/ui5-fontawesome)
 [![Greenkeeper badge](https://badges.greenkeeper.io/zypA13510/ui5-fontawesome.svg)](https://greenkeeper.io/)
+[![GitHub downloads](https://img.shields.io/github/downloads/zypA13510/ui5-fontawesome/total.svg?style=flat)](https://github.com/zypA13510/ui5-fontawesome/releases)
+[![NPM version](https://img.shields.io/npm/v/ui5-fontawesome.svg?style=flat)](https://www.npmjs.com/package/ui5-fontawesome)
 
 A [Font Awesome](https://fontawesome.com/) plugin for [OpenUI5](https://openui5.org/)/SAPUI5
 
