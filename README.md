@@ -36,6 +36,9 @@ A [Font Awesome](https://fontawesome.com/) plugin for [OpenUI5](https://openui5.
     </mvc:View>
     ```
 
+## Changelog
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 The code contained in this repository is licensed under MIT license.
 
