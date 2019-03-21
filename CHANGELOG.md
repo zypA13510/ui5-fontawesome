@@ -1,3 +1,16 @@
+## [1.1.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.1.0...v1.1.1) (2019-03-21)
+
+
+### Bug Fixes
+
+* **package:** update @fortawesome/fontawesome-free to version 5.8.1 ([36be5f8](https://github.com/zypA13510/ui5-fontawesome/commit/36be5f8))
+
+
+
+
+
+Built with Font Awesome free 5.8.1
+
 # [1.1.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.0.1...v1.1.0) (2019-03-20)
 
 
