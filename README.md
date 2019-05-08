@@ -1,9 +1,12 @@
 # ui5-fontawesome
 
-[![CircleCI](https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome.svg?style=flat)](https://circleci.com/gh/zypA13510/ui5-fontawesome)
-[![Greenkeeper badge](https://badges.greenkeeper.io/zypA13510/ui5-fontawesome.svg)](https://greenkeeper.io/)
-[![GitHub downloads](https://img.shields.io/github/downloads/zypA13510/ui5-fontawesome/total.svg?style=flat)](https://github.com/zypA13510/ui5-fontawesome/releases)
-[![NPM version](https://img.shields.io/npm/v/ui5-fontawesome.svg?style=flat)](https://www.npmjs.com/package/ui5-fontawesome)
+[![CircleCI status](https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square)](https://circleci.com/gh/zypA13510/ui5-fontawesome)
+[![NPM version](https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square)](https://www.npmjs.com/package/ui5-fontawesome)
+[![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square)](https://snyk.io/test/github/zypA13510/ui5-fontawesome)
+[![Greenkeeper enabled](https://img.shields.io/badge/Greenkeeper-enabled-brightgreen.svg?style=flat-square)](https://greenkeeper.io/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org/)
+[![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
 A [Font Awesome](https://fontawesome.com/) plugin for [OpenUI5](https://openui5.org/)/SAPUI5
 
