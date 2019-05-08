@@ -1,6 +1,7 @@
 # ui5-fontawesome
 
 [![CircleCI status](https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square)](https://circleci.com/gh/zypA13510/ui5-fontawesome)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/zypA13510/ui5-fontawesome.svg?logo=Code%20Climate&style=flat-square)](https://codeclimate.com/github/zypA13510/ui5-fontawesome/maintainability)
 [![NPM version](https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square)](https://www.npmjs.com/package/ui5-fontawesome)
 [![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square)](https://snyk.io/test/github/zypA13510/ui5-fontawesome)
 [![Greenkeeper enabled](https://img.shields.io/badge/Greenkeeper-enabled-brightgreen.svg?style=flat-square)](https://greenkeeper.io/)
