@@ -1,3 +1,22 @@
+# [1.2.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.1.3...v1.2.0) (2019-06-06)
+
+
+### Features
+
+* update @fortawesome/fontawesome-free to version 5.9.0 ([#12](https://github.com/zypA13510/ui5-fontawesome/issues/12)) ([6e48eef](https://github.com/zypA13510/ui5-fontawesome/commit/6e48eef))
+
+
+### Reverts
+
+* "chore(release): 1.1.3" ([10a98e4](https://github.com/zypA13510/ui5-fontawesome/commit/10a98e4))
+* "fix(package): update @fortawesome/fontawesome-free to version 5.9.0" ([c57bf8f](https://github.com/zypA13510/ui5-fontawesome/commit/c57bf8f))
+
+
+
+
+
+Built with Font Awesome free 5.9.0
+
 ## [1.1.2](https://github.com/zypA13510/ui5-fontawesome/compare/v1.1.1...v1.1.2) (2019-05-08)
 
 
