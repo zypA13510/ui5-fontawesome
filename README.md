@@ -1,15 +1,34 @@
-# ui5-fontawesome
+<h1 align="center" style="border-bottom: none;">ui5-fontawesome</h1>
+<h3 align="center">A <a href="https://fontawesome.com/">Font Awesome</a> plugin for <a href="https://openui5.org/">OpenUI5</a>/SAPUI5.</h3>
+<p align="center">
+    <a href="https://circleci.com/gh/zypA13510/ui5-fontawesome">
+        <img alt="CircleCI build status" src="https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square">
+    </a>
+    <a href="https://codeclimate.com/github/zypA13510/ui5-fontawesome/maintainability">
+        <img alt="Code Climate maintainability rating" src="https://img.shields.io/codeclimate/maintainability/zypA13510/ui5-fontawesome.svg?logo=Code-Climate&style=flat-square">
+    </a>
+    <a href="https://snyk.io/test/npm/ui5-fontawesome">
+        <img alt="Snyk known vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square">
+    </a>
+</p>
+<p align="center">
+    <a href="https://www.npmjs.com/package/ui5-fontawesome">
+        <img alt="NPM version" src="https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square">
+    </a>
+    <a href="https://greenkeeper.io/">
+        <img alt="Greenkeeper enabled" src="https://img.shields.io/badge/Greenkeeper-enabled-brightgreen.svg?logo=Greenkeeper&style=flat-square">
+    </a>
+    <a href="https://github.com/semantic-release/semantic-release">
+        <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square">
+    </a>
+    <a href="https://conventionalcommits.org/">
+        <img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square">
+    </a>
+    <a href="http://commitizen.github.io/cz-cli/">
+        <img alt="commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square">
+    </a>
+</p>
 
-[![CircleCI status](https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square)](https://circleci.com/gh/zypA13510/ui5-fontawesome)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/zypA13510/ui5-fontawesome.svg?logo=Code%20Climate&style=flat-square)](https://codeclimate.com/github/zypA13510/ui5-fontawesome/maintainability)
-[![NPM version](https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square)](https://www.npmjs.com/package/ui5-fontawesome)
-[![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square)](https://snyk.io/test/github/zypA13510/ui5-fontawesome)
-[![Greenkeeper enabled](https://img.shields.io/badge/Greenkeeper-enabled-brightgreen.svg?style=flat-square)](https://greenkeeper.io/)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org/)
-[![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
-
-A [Font Awesome](https://fontawesome.com/) plugin for [OpenUI5](https://openui5.org/)/SAPUI5
 
 ## Usage
 1. Download the package and put it somewhere in your app folder (please keep the folder structure).
