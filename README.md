@@ -10,6 +10,12 @@
     <a href="https://snyk.io/test/npm/ui5-fontawesome">
         <img alt="Snyk known vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square">
     </a>
+    <a href="https://www.npmjs.com/package/ui5-fontawesome">
+        <img alt="NPM download count" src="https://img.shields.io/npm/dw/ui5-fontawesome.svg?logo=npm&style=flat-square">
+    </a>
+    <a href="https://github.com/zypA13510/ui5-fontawesome/releases">
+        <img alt="GitHub download count" src="https://img.shields.io/github/downloads/zypA13510/ui5-fontawesome/total.svg?logo=GitHub&style=flat-square">
+    </a>
 </p>
 <p align="center">
     <a href="https://www.npmjs.com/package/ui5-fontawesome">
