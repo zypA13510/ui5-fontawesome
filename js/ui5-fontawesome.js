@@ -8,7 +8,7 @@ sap.ui.require([
 		var scriptTag = document.querySelector('SCRIPT[src][id=ui5-fontawesome]')
 		var scriptConfig = scriptTag.getAttribute('data-resourceroot')
 		if (scriptConfig) {
-			return scriptConfig.slice(-1) == '/' ? scriptTag : scriptTag + '/'
+			return scriptConfig.slice(-1) == '/' ? scriptConfig : scriptConfig + '/'
 		}
 		var scriptSrc = scriptTag.getAttribute('src')
 		var regexTest = /^((?:.*\/)?ui5-fontawesome\/)/
