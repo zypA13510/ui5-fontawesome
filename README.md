@@ -37,6 +37,8 @@
 
 
 ## Usage
+### Bootstrapping
+#### Hosting On-Premise
 1. Download the package and put it somewhere in your app folder (please keep the folder structure).
 2. Add the following to your HTML after the bootstrapping of OpenUI5 (change `src` accordingly):
     ```HTML
@@ -53,17 +55,49 @@
       data-resourceroot="../not-ui5-fontawesome/">
     </script>
     ```
-3. Use the font in UI5 application, adding `fa-brands`/`fa-regular`/`fa-solid` depending on your desired style (only free icon styles are supported at the moment):
-    ```XML
-    <mvc:View
-      xmlns="sap.m"
-      xmlns:mvc="sap.ui.core.mvc"
-      xmlns:core="sap.ui.core">
-      <core:Icon src="sap-icon://fa-brands/font-awesome" size="32px"/>
-      <Button icon="sap-icon://fa-regular/closed-captioning"/>
-      <StandardListItem icon="sap-icon://fa-solid/award" title="This is awesome."/>
-    </mvc:View>
-    ```
+#### Bootstrapping from CDN
+Add one of the following to your HTML after the bootstrapping of OpenUI5. **Note:** It is advised to specify at least a major version to avoid breaking your app, change `^1` to your desired [semver range](https://docs.npmjs.com/misc/semver#ranges) accordingly. Additionally, you may want to pinpoint a specific version if you wish to use [SRI check](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity).
+##### UNPKG
+```HTML
+<script
+  src="https://unpkg.com/ui5-fontawesome@^1/js/ui5-fontawesome.min.js"
+  id="ui5-fontawesome"
+  data-resourceroot="https://unpkg.com/ui5-fontawesome@^1/">
+</script>
+```
+##### jsDelivr
+```HTML
+<script
+  src="https://cdn.jsdelivr.net/npm/ui5-fontawesome@^1/js/ui5-fontawesome.min.js"
+  id="ui5-fontawesome"
+  data-resourceroot="https://cdn.jsdelivr.net/npm/ui5-fontawesome@^1/">
+</script>
+```
+### Use in Views and Controllers
+To use the font in UI5 application, prepend `fa-brands`/`fa-regular`/`fa-solid`, depending on your desired style, to the [icon name](https://fontawesome.com/icons) (only free icon-style combinations are supported):
+```XML
+<mvc:View
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core">
+  <core:Icon src="sap-icon://fa-brands/font-awesome" size="2.5rem" color="#339AF0" class="sapUiTinyMargin"/>
+  <Button icon="sap-icon://fa-regular/closed-captioning" class="sapUiTinyMargin"/>
+  <StandardListItem icon="sap-icon://fa-solid/award" title="This is awesome."/>
+</mvc:View>
+```
+```JavaScript
+sap.ui.define([
+  'sap/ui/core/Icon'
+], function(
+  Icon
+) {
+  return new Icon({
+    src: 'sap-icon://fa-brands/font-awesome',
+    size: '2.5rem',
+    color: '#339AF0'
+  });
+});
+```
 
 ## Changelog
 See [CHANGELOG.md](CHANGELOG.md).
