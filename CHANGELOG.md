@@ -1,3 +1,16 @@
+## [1.2.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.2.0...v1.2.1) (2019-06-18)
+
+
+### Bug Fixes
+
+* fix data-resourceroot parsing ([ee610da](https://github.com/zypA13510/ui5-fontawesome/commit/ee610da)), closes [#16](https://github.com/zypA13510/ui5-fontawesome/issues/16)
+
+
+
+
+
+Built with Font Awesome free 5.9.0
+
 # [1.2.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.1.3...v1.2.0) (2019-06-06)
 
 
