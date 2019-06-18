@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">ui5-fontawesome</h1>
-<h3 align="center">A <a href="https://fontawesome.com/">Font Awesome</a> plugin for <a href="https://openui5.org/">OpenUI5</a>/SAPUI5.</h3>
+<p align="center">A <a href="https://fontawesome.com/">Font Awesome</a> plugin for <a href="https://openui5.org/">OpenUI5</a>/SAPUI5.</p>
 <p align="center">
     <a href="https://circleci.com/gh/zypA13510/ui5-fontawesome">
         <img alt="CircleCI build status" src="https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square">
