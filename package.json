@@ -44,7 +44,7 @@
     "bluebird": "^3.5.3",
     "commitizen": "^3.0.7",
     "del": "^4.0.0",
-    "eslint": "^5.15.3",
+    "eslint": "^6.0.0",
     "gulp": "^4.0.0",
     "gulp-decompress": "^2.0.2",
     "gulp-rename": "^1.4.0",
