@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.0.0",
-    "@commitlint/prompt": "^8.0.0",
+    "@commitlint/prompt": "^8.1.0",
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/exec": "^3.3.2",
@@ -42,7 +42,7 @@
     "@semantic-release/npm": "^5.1.10",
     "@semantic-release/release-notes-generator": "^7.1.4",
     "bluebird": "^3.5.3",
-    "commitizen": "^3.0.7",
+    "commitizen": "^3.1.1",
     "del": "^5.0.0",
     "eslint": "^6.0.0",
     "gulp": "^4.0.0",
