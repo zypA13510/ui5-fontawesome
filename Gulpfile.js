@@ -50,7 +50,7 @@ async function fetchMetadata() {
 	for (let style in results) {
 		stream.push(new Vinyl({
 			path: `${style}.json`,
-			contents: new Buffer(results[style]),
+			contents: Buffer.from(results[style]),
 		}))
 	}
 	stream.push(null)
