@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint --quiet . && semantic-commitlint",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "prepare": "gulp rebuild"
   },
   "repository": "github:zypA13510/ui5-fontawesome",
