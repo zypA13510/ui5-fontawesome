@@ -34,7 +34,7 @@
 	},
 	"overrides": [
 		{
-			"files": ["Gulpfile.js"],
+			"files": ["Gulpfile.js", "tasks/**/*.js"],
 			"env": {
 				"node": true,
 				"es6": true
