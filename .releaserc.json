@@ -20,10 +20,10 @@
 				"message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}\n\n[skip ci]"
 			}
 		],
+		"semantic-commitlint",
 		[
 			"@semantic-release/exec",
 			{
-				"verifyConditionsCmd": "npx semantic-commitlint",
 				"generateNotesCmd": "npx gulp --silent printversion",
 				"prepareCmd": "npx gulp pack --packageversion ${nextRelease.version}",
 				"successCmd": "npx gulp clean",
