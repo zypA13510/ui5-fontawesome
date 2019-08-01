@@ -5,7 +5,7 @@
   "browser": "js/ui5-fontawesome.js",
   "scripts": {
     "commit": "git-cz",
-    "lint": "eslint --quiet . && semantic-commitlint",
+    "lint": "eslint --quiet . && commitlint -f origin/master -t HEAD",
     "test": "npm run lint",
     "prepare": "gulp rebuild"
   },
