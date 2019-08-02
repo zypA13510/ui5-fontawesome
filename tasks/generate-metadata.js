@@ -38,7 +38,7 @@ function process(metadata) {
 		let styles = metadata[icon].free
 		let codePoint = metadata[icon].unicode
 		Object.keys(result).forEach(style => {
-			if (styles.includes('style')) {
+			if (styles.includes(style)) {
 				result[style][icon] = codePoint
 			}
 		})
