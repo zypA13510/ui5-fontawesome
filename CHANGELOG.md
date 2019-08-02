@@ -1,3 +1,16 @@
+## [1.3.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.3.0...v1.3.1) (2019-08-02)
+
+
+### Bug Fixes
+
+* **build:** fix metadata build script ([95d4e96](https://github.com/zypA13510/ui5-fontawesome/commit/95d4e96))
+
+
+
+
+
+Built with Font Awesome free 5.10.0
+
 # [1.3.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.2.1...v1.3.0) (2019-08-01)
 
 
