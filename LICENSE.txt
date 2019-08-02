@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------------
+The distributed package includes the following components that are subject to
+separate license terms:
+
+Font Awesome Free
+Author: Fonticons Inc. (https://fontawesome.com/)
+License: Font Awesome Free License (SEE fontawesome-free/LICENSE.txt)
