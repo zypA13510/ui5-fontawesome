@@ -29,7 +29,8 @@ jobs:
       # run tests!
       - run: |
           npm test
-          npx semantic-commitlint --ci
+      - store_test_results:
+          path: .reports
 
   build:
     docker:
