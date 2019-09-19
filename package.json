@@ -1,6 +1,6 @@
 {
   "name": "ui5-fontawesome",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "A Font Awesome plugin for UI5",
   "browser": "js/ui5-fontawesome.js",
   "scripts": {
