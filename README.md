@@ -11,7 +11,10 @@
         <img alt="Snyk known vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square">
     </a>
     <a href="https://www.npmjs.com/package/ui5-fontawesome">
-        <img alt="NPM download count" src="https://img.shields.io/npm/dw/ui5-fontawesome.svg?logo=npm&style=flat-square">
+        <img alt="NPM download count" src="https://img.shields.io/npm/dm/ui5-fontawesome.svg?logo=npm&style=flat-square">
+    </a>
+    <a href="https://www.jsdelivr.com/package/npm/ui5-fontawesome">
+        <img alt="jsDelivr hits" src="https://img.shields.io/jsdelivr/npm/hm/ui5-fontawesome.svg?logo=jsdelivr&style=flat-square">
     </a>
     <a href="https://github.com/zypA13510/ui5-fontawesome/releases">
         <img alt="GitHub download count" src="https://img.shields.io/github/downloads/zypA13510/ui5-fontawesome/total.svg?logo=GitHub&style=flat-square">
@@ -56,20 +59,20 @@
     ```
 #### Bootstrapping from CDN
 Add one of the following to your HTML after the bootstrapping of OpenUI5. **Note:** It is advised to specify at least a major version to avoid breaking your app, change `^1` to your desired [semver range](https://docs.npmjs.com/misc/semver#ranges) accordingly. Additionally, you may want to pinpoint a specific version if you wish to use [SRI check](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity).
-##### UNPKG
-```HTML
-<script
-  src="https://unpkg.com/ui5-fontawesome@^1/js/ui5-fontawesome.min.js"
-  id="ui5-fontawesome"
-  data-resourceroot="https://unpkg.com/ui5-fontawesome@^1/">
-</script>
-```
 ##### jsDelivr
 ```HTML
 <script
   src="https://cdn.jsdelivr.net/npm/ui5-fontawesome@^1/js/ui5-fontawesome.min.js"
   id="ui5-fontawesome"
   data-resourceroot="https://cdn.jsdelivr.net/npm/ui5-fontawesome@^1/">
+</script>
+```
+##### UNPKG
+```HTML
+<script
+  src="https://unpkg.com/ui5-fontawesome@^1/js/ui5-fontawesome.min.js"
+  id="ui5-fontawesome"
+  data-resourceroot="https://unpkg.com/ui5-fontawesome@^1/">
 </script>
 ```
 ### Use in Views and Controllers
