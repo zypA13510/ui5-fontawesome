@@ -1,6 +1,6 @@
 # Automatically generated
 /dist
-/.reports
+/reports
 /fontawesome-free
 /metadata
 *.min.js

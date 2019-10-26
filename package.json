@@ -5,7 +5,7 @@
   "browser": "js/ui5-fontawesome.js",
   "scripts": {
     "commit": "git-cz",
-    "lint:eslint:ci": "eslint . --ignore-path .gitignore --format junit --output-file .reports/eslint/report.xml",
+    "lint:eslint:ci": "eslint . --ignore-path .gitignore --format junit --output-file ./reports/eslint/junit.xml",
     "lint:eslint:local": "eslint . --ignore-path .gitignore",
     "lint:eslint": "if is-ci; then npm run lint:eslint:ci; else npm run lint:eslint:local; fi",
     "lint:commitlint:ci": "commitlint -f v1.2.0 -t HEAD",
