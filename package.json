@@ -7,10 +7,10 @@
     "commit": "git-cz",
     "lint:eslint:ci": "eslint . --ignore-path .gitignore --format junit --output-file ./reports/eslint/junit.xml",
     "lint:eslint:local": "eslint . --ignore-path .gitignore",
-    "lint:eslint": "if is-ci; then npm run lint:eslint:ci; else npm run lint:eslint:local; fi",
+    "lint:eslint": "if-ci npm run lint:eslint:ci && if-not-ci npm run lint:eslint:local",
     "lint:commitlint:ci": "commitlint -f v1.2.0 -t HEAD",
     "lint:commitlint:local": "commitlint -f origin/master -t HEAD",
-    "lint:commitlint": "if is-ci; then npm run lint:commitlint:ci; else npm run lint:commitlint:local; fi",
+    "lint:commitlint": "if-ci npm run lint:commitlint:ci && if-not-ci npm run lint:commitlint:local",
     "lint": "npm-run-all --parallel --continue-on-error lint:eslint lint:commitlint",
     "test:lint": "npm run lint",
     "test": "npm-run-all --parallel --continue-on-error test:*",
@@ -26,7 +26,7 @@
     "sapui5",
     "icon"
   ],
-  "author": "Yuping Zuo <yuping.zuo+HxmTqd@outlook.com> (https://github.com/zypA13510)",
+  "author": "Yuping Zuo (https://github.com/zypA13510)",
   "contributors": [
     "Font Awesome (https://fontawesome.com/)"
   ],
@@ -55,7 +55,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
-    "is-ci": "^2.0.0",
+    "if-ci": "^3.0.0",
     "lodash.pickby": "^4.6.0",
     "npm-run-all": "^4.1.5",
     "request": "^2.88.0",
