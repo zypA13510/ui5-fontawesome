@@ -61,7 +61,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.5",
     "semantic-release": "^15.13.31",
-    "semver": "^7.0.0",
+    "semver": "^7.1.0",
     "vinyl": "^2.2.0"
   },
   "config": {
