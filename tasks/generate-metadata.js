@@ -1,21 +1,18 @@
-const {dest} = require('gulp')
 const Promise = require('bluebird')
+const fs = require('fs-extra')
+const {dest} = require('gulp')
+const yaml = require('js-yaml')
 const _ = {
 	pickBy: require('lodash.pickby')
 }
-const {Readable: ReadableStream} = require('stream')
-const request = require('request-promise')
 const semver = require('semver')
+const {Readable: ReadableStream} = require('stream')
 const Vinyl = require('vinyl')
 
-async function fetch() {
-	return request({
-		url: 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/metadata/icons.json',
-		headers: {
-			'User-Agent': 'Request-Promise',
-		},
-		json: true,
-	})
+const METADATA_FILE = 'node_modules/@fortawesome/fontawesome-free/metadata/icons.yml'
+
+async function read() {
+	return yaml.safeLoad(await fs.readFile(METADATA_FILE, 'utf8'))
 }
 
 /**
@@ -30,12 +27,12 @@ function filter(metadata) {
 }
 
 /**
- * Categorize icons by styles supported in free version.
+ * Categorize icons by styles supported.
  */
 function process(metadata) {
 	let result = {regular: {}, solid: {}, brands: {}}
 	Object.keys(metadata).forEach(icon => {
-		let styles = metadata[icon].free
+		let styles = metadata[icon].styles
 		let codePoint = metadata[icon].unicode
 		Object.keys(result).forEach(style => {
 			if (styles.includes(style)) {
@@ -63,7 +60,7 @@ async function output(metadata) {
 }
 
 async function generateMetadata() {
-	const metadata = process(filter(await fetch()))
+	const metadata = process(filter(await read()))
 	return output(metadata)
 }
 
