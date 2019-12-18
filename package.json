@@ -36,7 +36,8 @@
   },
   "homepage": "https://github.com/zypA13510/ui5-fontawesome#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.12.0"
+    "@fortawesome/fontawesome-free": "5.12.0",
+    "@openui5/sap.ui.core": "^1.44.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.2.0",
@@ -44,6 +45,7 @@
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/exec": "^3.3.8",
     "@semantic-release/git": "^7.0.18",
+    "@ui5/cli": "^1.12.2",
     "bluebird": "^3.7.2",
     "commitizen": "^4.0.3",
     "commitlint": "^8.2.0",
