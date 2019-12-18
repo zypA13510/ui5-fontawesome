@@ -105,8 +105,12 @@ sap.ui.define([
 See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
-The code contained in this repository is licensed under MIT license.
+MIT
 
-Additionally, the distributed package contains part of the Font Awesome free package, you can find the license from [their repository](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt) or `fontawesome-free/LICENSE.txt` in your download.
+The distributed package includes the following components that are subject to separate license terms:
+
+Font Awesome Free  
+Author: Fonticons Inc. (https://fontawesome.com/)  
+License: Font Awesome Free License (see `node_modules/@fortawesome/fontawesome-free/LICENSE.txt`)
 
 This project is not endorsed by or affiliated with either Font Awesome or OpenUI5.

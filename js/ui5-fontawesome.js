@@ -20,7 +20,7 @@ sap.ui.require([
 	}
 	
 	var resourceRoot = getResourceRoot()
-	var fontURI = resourceRoot + 'fontawesome-free/webfonts/'
+	var fontURI = resourceRoot + 'node_modules/@fortawesome/fontawesome-free/webfonts/'
 	var styles = [{
 		fontFamily: 'fa-regular-400',
 		collectionName: 'fa-regular',

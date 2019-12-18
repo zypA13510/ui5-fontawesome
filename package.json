@@ -30,7 +30,7 @@
   "contributors": [
     "Font Awesome (https://fontawesome.com/)"
   ],
-  "license": "(MIT AND OFL-1.1)",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
     "url": "https://github.com/zypA13510/ui5-fontawesome/issues"
   },
@@ -65,13 +65,15 @@
     "semver": "^7.1.0",
     "vinyl": "^2.2.0"
   },
+  "bundledDependencies": [
+    "@fortawesome/fontawesome-free"
+  ],
   "config": {
     "commitizen": {
       "path": "@commitlint/prompt"
     }
   },
   "files": [
-    "fontawesome-free/**/*",
     "js/**/*.js",
     "js/**/*.min.js.map",
     "metadata/*.json",

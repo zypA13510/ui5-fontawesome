@@ -26,4 +26,4 @@ separate license terms:
 
 Font Awesome Free
 Author: Fonticons Inc. (https://fontawesome.com/)
-License: Font Awesome Free License (SEE fontawesome-free/LICENSE.txt)
+License: Font Awesome Free License (see `node_modules/@fortawesome/fontawesome-free/LICENSE.txt`)

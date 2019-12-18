@@ -7,14 +7,6 @@ const generateMetadata = require('./tasks/generate-metadata')
 const pack = require('./tasks/pack')
 const printFontAwesomeVersion = require('./tasks/print-version')
 
-function copy() {
-	return src([
-		'node_modules/@fortawesome/fontawesome-free/LICENSE*',
-		'node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,woff2}'
-	], {base: 'node_modules/@fortawesome/fontawesome-free'})
-		.pipe(dest('fontawesome-free/'))
-}
-
 function minify() {
 	return src(['js/*.js', '!js/*.min.js'])
 		.pipe(sourcemaps.init())
@@ -27,7 +19,6 @@ function minify() {
 function clean() {
 	return del([
 		'metadata/**',
-		'fontawesome-free/**',
 		'js/**/*.min.js',
 		'js/**/*.min.js.map',
 	])
@@ -35,6 +26,6 @@ function clean() {
 
 exports.printversion = printFontAwesomeVersion
 exports.clean = clean
-exports.build = parallel(generateMetadata, copy, minify)
+exports.build = parallel(generateMetadata, minify)
 exports.rebuild = series(exports.clean, exports.build)
 exports.pack = pack
