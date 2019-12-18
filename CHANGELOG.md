@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.4.1...v1.5.0) (2019-12-18)
+
+
+### Features
+
+* update fontawesome-free to version 5.12.0 ([#36](https://github.com/zypA13510/ui5-fontawesome/issues/36)) ([6a6ac3a](https://github.com/zypA13510/ui5-fontawesome/commit/6a6ac3ae47f7d4e7eeff69c8ef0a12c304eb5d5c))
+
+
+
+
+
+Built with Font Awesome free 5.12.0
+
 ## [1.4.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.4.0...v1.4.1) (2019-09-24)
 
 
