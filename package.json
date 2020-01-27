@@ -43,7 +43,7 @@
     "@commitlint/prompt": "^8.2.0",
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/exec": "^3.3.8",
-    "@semantic-release/git": "^7.0.18",
+    "@semantic-release/git": "^9.0.0",
     "bluebird": "^3.7.2",
     "commitizen": "^4.0.3",
     "commitlint": "^8.2.0",
