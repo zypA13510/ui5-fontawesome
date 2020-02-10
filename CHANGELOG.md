@@ -1,3 +1,18 @@
+CHANGELOG
+
+## [1.5.1-beta.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.0...v1.5.1-beta.1) (2020-02-10)
+
+
+### Bug Fixes
+
+* update fontawesome-free to v5.12.1 ([b4f5403](https://github.com/zypA13510/ui5-fontawesome/commit/b4f540389f8645c1af0654c9fae34c8fe8b13c0c)), closes [#43](https://github.com/zypA13510/ui5-fontawesome/issues/43)
+
+
+
+
+
+Built with Font Awesome free 5.12.1
+
 # [1.5.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.4.1...v1.5.0) (2019-12-18)
 
 
