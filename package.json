@@ -41,9 +41,9 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt": "^8.3.5",
-    "@semantic-release/changelog": "^3.0.6",
-    "@semantic-release/exec": "^3.3.8",
-    "@semantic-release/git": "^7.0.18",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "bluebird": "^3.7.2",
     "commitizen": "^4.0.3",
     "commitlint": "^8.3.5",
@@ -61,7 +61,7 @@
     "lodash.pickby": "^4.6.0",
     "npm-run-all": "^4.1.5",
     "request": "^2.88.0",
-    "semantic-release": "^15.13.31",
+    "semantic-release": "^17.0.2",
     "semver": "^7.1.2",
     "vinyl": "^2.2.0"
   },
@@ -83,6 +83,41 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md",
+          "changelogTitle": "CHANGELOG"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "tarballDir": "dist"
+        }
+      ],
+      "@semantic-release/git",
+      [
+        "@semantic-release/exec",
+        {
+          "generateNotesCmd": "npx gulp --silent printversion",
+          "prepareCmd": "npx gulp pack --packageversion ${nextRelease.version}",
+          "successCmd": "npx gulp clean",
+          "failCmd": "npx gulp clean"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": "dist/*.zip"
+        }
+      ]
     ]
   }
 }
