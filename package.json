@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/zypA13510/ui5-fontawesome#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.12.1"
+    "@fortawesome/fontawesome-free": "5.13.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
