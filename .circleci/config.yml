@@ -8,13 +8,15 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v3-dependencies-{{ checksum "package-lock.json" }}
-            - v3-dependencies-
+            - v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - v4-dependencies-{{ .Branch }}
+            - v4-dependencies-master
+            - v4-dependencies-
       - run: npm install
       - save_cache:
           paths:
             - node_modules
-          key: v3-dependencies-{{ checksum "package-lock.json" }}
+          key: v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: |
           npm test
       - store_test_results:
@@ -27,13 +29,15 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v3-dependencies-{{ checksum "package-lock.json" }}
-            - v3-dependencies-
+            - v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - v4-dependencies-{{ .Branch }}
+            - v4-dependencies-master
+            - v4-dependencies-
       - run: npm install
       - save_cache:
           paths:
             - node_modules
-          key: v3-dependencies-{{ checksum "package-lock.json" }}
+          key: v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
       - run: npx semantic-release
 
 workflows:
