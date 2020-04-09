@@ -1,3 +1,5 @@
+'use strict'
+
 const {src, dest} = require('gulp')
 const decompress = require('gulp-decompress')
 const rename = require('gulp-rename')
