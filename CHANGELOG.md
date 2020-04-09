@@ -1,5 +1,18 @@
 CHANGELOG
 
+## [1.5.2](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.1...v1.5.2) (2020-04-09)
+
+
+### Bug Fixes
+
+* use strict mode ([1b91d5a](https://github.com/zypA13510/ui5-fontawesome/commit/1b91d5aa16329fb867e884df8783aeecffb1c14a))
+
+
+
+
+
+Built with Font Awesome free 5.12.1
+
 ## [1.5.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.0...v1.5.1) (2020-02-11)
 
 
