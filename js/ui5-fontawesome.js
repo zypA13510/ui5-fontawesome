@@ -3,6 +3,7 @@ sap.ui.require([
 ], function(
 	IconPool
 ) {
+	'use strict'
 	
 	function getResourceRoot() {
 		var scriptTag = document.querySelector('SCRIPT[src][id=ui5-fontawesome]')
