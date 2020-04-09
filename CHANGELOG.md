@@ -1,5 +1,18 @@
 CHANGELOG
 
+# [1.6.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.2...v1.6.0) (2020-04-09)
+
+
+### Features
+
+* update fontawesome-free to v5.13.0 ([78e9c56](https://github.com/zypA13510/ui5-fontawesome/commit/78e9c56b601d6983229435d5d5f1c427e47fab53))
+
+
+
+
+
+Built with Font Awesome free 5.13.0
+
 ## [1.5.2](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.1...v1.5.2) (2020-04-09)
 
 
