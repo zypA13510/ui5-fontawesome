@@ -45,6 +45,20 @@
 			"parserOptions": {
 				"ecmaVersion": 2017
 			}
+		},
+		{
+			"files": ["tests/**/*.js"],
+			"env": {
+				"node": true,
+				"es6": true,
+				"mocha": true
+			},
+			"globals": {
+				"sap": "off"
+			},
+			"parserOptions": {
+				"ecmaVersion": 2017
+			}
 		}
 	]
 }
