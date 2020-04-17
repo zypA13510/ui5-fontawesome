@@ -1,59 +1,85 @@
-version: 2
+version: 2.1
+
+commands:
+  npmsetup:
+    description: npm install & caching
+    steps:
+    - restore_cache:
+        keys:
+        - v1-npm-{{ arch }}-
+    - run: npm ci
+    - save_cache:
+        paths:
+        - ~/.npm
+        key: v1-npm-{{ arch }}-{{ epoch }}
+
 jobs:
-  prebuild:
+  lint:
     docker:
-      - image: circleci/node:12-browsers
-    working_directory: ~/repo
+    - image: circleci/node:12-browsers
+    working_directory: ~/ui5-fontawesome
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-            - v4-dependencies-{{ .Branch }}
-            - v4-dependencies-master
-            - v4-dependencies-
-      - run: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-      - run: |
-          npm test
-      - store_test_results:
-          path: ./reports
-  build:
+    - checkout
+    - npmsetup
+    - run:
+        name: eslint
+        command: npx eslint . --ignore-path .gitignore --format junit --output-file ./reports/eslint/junit.xml
+    - run:
+        name: commitlint
+        command: |
+          mkdir -p ./reports/commitlint
+          npx commitlint -f v1.2.0 -t HEAD -o commitlint-format-junit > ./reports/commitlint/junit.xml
+    - store_test_results:
+        path: ./reports
+  test:
     docker:
-      - image: circleci/node:12
-    working_directory: ~/repo
+    - image: circleci/node:12-browsers
+    working_directory: ~/ui5-fontawesome
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-            - v4-dependencies-{{ .Branch }}
-            - v4-dependencies-master
-            - v4-dependencies-
-      - run: npm install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v4-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-      - run: npx semantic-release
+    - checkout
+    - npmsetup
+    - run:
+        name: test
+        command:
+          npx nyc --reporter html mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/mocha/junit.xml tests/**.spec.js
+    - run:
+        name: coverage
+        command: |
+          export COVERALLS_SERVICE_JOB_ID=$CIRCLE_BUILD_NUM
+          npx nyc report --reporter text-lcov | npx coveralls
+        environment:
+          COVERALLS_SERVICE_NAME: CircleCI
+          COVERALLS_GIT_BRANCH: << pipeline.git.branch >>
+          COVERALLS_SERVICE_NUMBER: << pipeline.number >>
+    - store_test_results:
+        path: ./reports
+    - store_artifacts:
+        path: ./coverage
+  release:
+    docker:
+    - image: circleci/node:12
+    working_directory: ~/ui5-fontawesome
+    steps:
+    - checkout
+    - npmsetup
+    - run: npx semantic-release
 
 workflows:
   version: 2
   build:
     jobs:
-      - prebuild
-      - build:
-          requires:
-            - prebuild
-          filters:
-            branches:
-              only:
-                - /^(0|[1-9][0-9]*)(?:\.(0|[1-9][0-9]*|x))?\.x$/
-                - master
-                - next
-                - next-major
-                - beta
-                - alpha
+    - lint
+    - test
+    - release:
+        requires:
+        - lint
+        - test
+        filters:
+          branches:
+            only:
+            - /^(0|[1-9][0-9]*)(?:\.(0|[1-9][0-9]*|x))?\.x$/
+            - master
+            - next
+            - next-major
+            - beta
+            - alpha
