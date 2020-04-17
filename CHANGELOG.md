@@ -1,5 +1,18 @@
 CHANGELOG
 
+## [1.6.1](https://github.com/zypA13510/ui5-fontawesome/compare/v1.6.0...v1.6.1) (2020-04-17)
+
+
+### Bug Fixes
+
+* throw an error on incorrect usage ([3208a46](https://github.com/zypA13510/ui5-fontawesome/commit/3208a466984408648e5fb85f205279bf9df1ccf4))
+
+
+
+
+
+Built with Font Awesome free 5.13.0
+
 # [1.6.0](https://github.com/zypA13510/ui5-fontawesome/compare/v1.5.2...v1.6.0) (2020-04-09)
 
 
