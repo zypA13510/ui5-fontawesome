@@ -4,11 +4,18 @@
     <a href="https://circleci.com/gh/zypA13510/ui5-fontawesome">
         <img alt="CircleCI build status" src="https://img.shields.io/circleci/project/github/zypA13510/ui5-fontawesome/master.svg?logo=CircleCI&style=flat-square">
     </a>
+    <a href="https://coveralls.io/github/zypA13510/ui5-fontawesome">
+        <img alt="Coveralls coverage status" src="https://img.shields.io/coveralls/github/zypA13510/ui5-fontawesome.svg?logo=coveralls&style=flat-square">
+    </a>
     <a href="https://codeclimate.com/github/zypA13510/ui5-fontawesome/maintainability">
         <img alt="Code Climate maintainability rating" src="https://img.shields.io/codeclimate/maintainability/zypA13510/ui5-fontawesome.svg?logo=Code-Climate&style=flat-square">
     </a>
     <a href="https://snyk.io/test/npm/ui5-fontawesome">
         <img alt="Snyk known vulnerabilities" src="https://img.shields.io/snyk/vulnerabilities/npm/ui5-fontawesome.svg?logo=Snyk&style=flat-square">
+    </a>
+    <br>
+    <a href="https://www.npmjs.com/package/ui5-fontawesome">
+        <img alt="NPM version" src="https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square">
     </a>
     <a href="https://www.npmjs.com/package/ui5-fontawesome">
         <img alt="NPM download count" src="https://img.shields.io/npm/dm/ui5-fontawesome.svg?logo=npm&style=flat-square">
@@ -20,9 +27,6 @@
         <img alt="GitHub download count" src="https://img.shields.io/github/downloads/zypA13510/ui5-fontawesome/total.svg?logo=GitHub&style=flat-square">
     </a>
     <br>
-    <a href="https://www.npmjs.com/package/ui5-fontawesome">
-        <img alt="NPM version" src="https://img.shields.io/npm/v/ui5-fontawesome.svg?logo=npm&style=flat-square">
-    </a>
     <a href="https://greenkeeper.io/">
         <img alt="Greenkeeper enabled" src="https://img.shields.io/badge/Greenkeeper-enabled-brightgreen.svg?logo=Greenkeeper&style=flat-square">
     </a>
