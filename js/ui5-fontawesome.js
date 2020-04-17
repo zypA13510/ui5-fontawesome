@@ -6,12 +6,18 @@ sap.ui.require([
 	'use strict'
 	
 	function getResourceRoot() {
-		var scriptTag = document.querySelector('SCRIPT[src][id=ui5-fontawesome]')
+		var scriptTag = document.querySelector('script[id=ui5-fontawesome]')
+		if (!scriptTag) {
+			throw new Error('Failed to locate ui5-fontawesome script tag.')
+		}
 		var scriptConfig = scriptTag.getAttribute('data-resourceroot')
 		if (scriptConfig) {
 			return scriptConfig.slice(-1) == '/' ? scriptConfig : scriptConfig + '/'
 		}
 		var scriptSrc = scriptTag.getAttribute('src')
+		if (!scriptSrc) {
+			throw new Error('Failed to determine resource root for ui5-fontawesome.')
+		}
 		var regexTest = /^((?:.*\/)?ui5-fontawesome\/)/
 		var matched = regexTest.exec(scriptSrc)
 		if (matched) {
