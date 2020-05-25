@@ -74,7 +74,7 @@
     "semver": "^7.2.1",
     "sinon": "^9.0.1",
     "sinon-chai": "^3.5.0",
-    "ui5-simple-require": "github:zypA13510/ui5-simple-require",
+    "ui5-simple-require": "^2.0.0",
     "vinyl": "^2.2.0"
   },
   "config": {
